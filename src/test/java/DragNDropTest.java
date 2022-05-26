@@ -6,7 +6,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.actions;
 
 public class DragNDropTest {
     @BeforeAll
@@ -17,7 +16,7 @@ public class DragNDropTest {
 
     @DisplayName("Тест функции drag-and-drop")
     @Test
-    public void DragNDropActionsTest(){
+    public void dragNDropActionsTest(){
         Selenide.open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").shouldHave(Condition.text("A"));
         $("#column-b").shouldHave(Condition.text("B"));
