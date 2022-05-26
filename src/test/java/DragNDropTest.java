@@ -20,7 +20,9 @@ public class DragNDropTest {
     public void DragNDropActionsTest(){
         Selenide.open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").shouldHave(Condition.text("A"));
+        $("#column-b").shouldHave(Condition.text("B"));
         $("#column-a").dragAndDropTo("#column-b");
         $("#column-a").shouldHave(Condition.text("B"));
+        $("#column-b").shouldHave(Condition.text("A"));
     }
 }
