@@ -1,3 +1,5 @@
+package com.mikkimesser;
+
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
